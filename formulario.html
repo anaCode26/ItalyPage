@@ -1,0 +1,410 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .s {
+            color: #b7b7b7;
+        }
+
+        .Gr {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            <li><i class="fa fa-envelope-o"></i> <a href="mailto:info@orsettolavatutto.it">info@orsettolavatutto.it</a></li>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <li><i class="fa fa-phone"></i><a href="tel://+393913043590"> +393913043590</a></li>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+                            <a href="#">Prenota ritiro</a>
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="page-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1>Ritiro</h1>
+                                </div>
+                                <!-- .col -->
+                            </div>
+                            <!-- .row -->
+                        </div>
+                        <!-- .container -->
+                    </div>
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center"></div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="chi.html">Chi siamo</a></li>
+                                <li><a href="cosa.html">Cosa facciamo</a></li>
+                                <li><a href="contact.html">Contatti</a></li>
+                                <li class="current-menu-item"><a href="formulario.html">Ritiro</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header --><!-- .page-header -->
+
+    <div class="container">
+
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../formulario/images/logop.png" alt="" width="250" height="150">
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 order-md-1">
+                <h4 class="mb-3">Ragione Sociale</h4>
+                <form class="needs-validation" action="Mail_Ritiro.php" method="post" enctype="multipart/form-data" name="form1">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Cognome">Cognome</label>
+                            <input type="text" class="form-control" id="Cognome" name="Cognome" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un nome valido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Nome">Nome</label>
+                            <input type="text" class="form-control" id="Nome" name="Nome" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un cognome valido.
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-4">
+                            <label for="Indirizzo">Indirizzo</label>
+                            <input type="text" class="form-control" id="Indirizzo" name="Indirizzo" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un Indirizzo valido.
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-1">
+                            <label for="Cap">Cap</label>
+                            <input type="text" class="form-control" id="Cap" name="Cap" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un Cap valido.
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-1">
+                            <label for="Prov">Prov.</label>
+                            <input type="text" class="form-control" id="Prov" name="Prov" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un Prov. valido.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="Città">Città</label>
+                            <input type="text" class="form-control" id="Città" name="Città" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un Città valido.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="Mail">Mail</label>
+                            <input type="text" class="form-control" id="Mail" name="Mail" placeholder="you@example.com" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un Mail valido.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 mb-3">
+                            <label for="Telefono">Telefono</label>
+                            <input type="text" class="form-control" id="Telefono" name="Telefono" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                È richiesto un Telefono valido.
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mb-3">Elenco ritiro</h4>
+                    <div class="row">
+                        <div class="col-6"><label><b>Prodotto</b></label></div>
+                        <div class="col-2"><label><b>Prezzo</b></label></div>
+                        <div class="col-3"><label><b>Quantità</b></label></div>
+                        <div class="col-1"><label><b>Totale</b></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Piumone singolo</label></div>
+                        <div class="col-2"><label>7</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="PSQ" name="PSQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal1">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Piumone matrimoniale</label></div>
+                        <div class="col-2"><label>10</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="PMQ" name="PMQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal2">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Piumone singolo d'Oca</label></div>
+                        <div class="col-2"><label>8,5</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="PSOQ" name="PSOQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal3">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Piumone matrimoniale d'Oca</label></div>
+                        <div class="col-2"><label>13,5</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="PMOQ" name="PMOQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal4">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Copri piumone singolo</label></div>
+                        <div class="col-2"><label>5</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="CPSQ" name="CPSQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal5">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Copri piumone matrimoniale</label></div>
+                        <div class="col-2"><label>7</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="CPMQ" name="CPMQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal6">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Trapunta singola</label></div>
+                        <div class="col-2"><label>6</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="TSQ" name="TSQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal7">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><label>Trapunta matrimoniale</label></div>
+                        <div class="col-2"><label>8</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="TMQ" name="TMQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal8">[€0,00]</label></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6"><label>Lenzuolo singolo</label></div>
+                        <div class="col-2"><label>3,5</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="LSQ" name="LSQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal9">[€0,00]</label></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6"><label>Lenzuolo matrimoniale</label></div>
+                        <div class="col-2"><label>3,5</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="LMQ" name="LMQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal10">[€0,00]</label></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6"><label>Copri materasso singolo</label></div>
+                        <div class="col-2"><label>7</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="CMSQ" name="CMSQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal11">[€0,00]</label></div>
+                    </div>                   
+
+                    <div class="row">
+                        <div class="col-6"><label>Coperta singola</label></div>
+                        <div class="col-2"><label>6</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="CSQ" name="CSQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal12">[€0,00]</label></div>
+                    </div>                   
+
+                    <div class="row">
+                        <div class="col-6"><label>Coperta matrimoniale</label></div>
+                        <div class="col-2"><label>8</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="CMQ" name="CMQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal13">[€0,00]</label></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6"><label>Cuscini</label></div>
+                        <div class="col-2"><label>2,5</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="CQ" name="CQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal14">[€0,00]</label></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6"><label>Federe</label></div>
+                        <div class="col-2"><label>1</label></div>
+                        <div class="col-3"><input type="text" class="form-control cl" id="FQ" name="FQ" style="width:70%" placeholder="0" onChange="suma();"></div>
+                        <div class="col-1"><label id="lblTotal15">[€0,00]</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9"></div>
+                        <div class="col-2"><label>TOTAL</label></div>
+                        <div class="col-1"><label id="lblTotal">[€0,00]</label></div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Invia Tramite Posta Elettronica</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><img src="images/logop.png" width="230" height="120"></h2>
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>M&P Laundry</h2>
+
+                        <ul>
+                            <li><a href="#">Prenota ritiro</a></li>
+                            <li><a href="chi.html">Chi siamo</a></li>
+                            <li><a href="cosa.html">Cosa facciamo</a></li>
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                            <h2>Listino</h2>
+
+                            <ul>
+                                <li>
+                                    <div class="posted-date"><a href="#">Scarica Listino</div>
+                                </li>
+                            </ul>
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contatti</h2>
+
+                            <ul>
+                                <li><i class="fa fa-phone"></i><a href="tel://+393913043590"> +393913043590</a></li>
+                                <li><i class="fa fa-envelope-o"></i> <a href="mailto:info@orsettolavatutto.it">info@orsettolavatutto.it</a></li>
+                                <li><i class="fa fa-map-marker"></i><span>Via di Casal Bianco vecchia, 8, Guidonia, 00012, RM</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+                        <div class="subscribe-form">
+
+                            </form>
+                        </div>
+                        <!-- .search-widget -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | Orsettolavatutto.it
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../formulario/js/popper/popper.js"></script>
+    <script src="../formulario/js/bootstrap/bootstrap.js"></script>
+    <script src="../formulario/js/holder.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+    function suma() {
+        var add = 0;
+        var cont = 0;
+        var Costo = [7, 10, 8.5, 13.5, 5, 7, 6, 8, 3.5, 3.5, 7, 6, 8, 2.5, 1];
+        var lbl = document.getElementById('lblTotal');
+        $('.cl').each(function () {
+            if (!isNaN($(this).val())) {
+
+                var lbltotal = document.getElementById('lblTotal' + cont);
+                console.log(lbltotal);
+                add += Number($(this).val()) * Number(Costo[cont]);
+                cont = 1 + cont;
+            }
+        });
+
+        lbl.innerText = "[€" + add + "]";
+    };
+
+    </script>
+</body>
+</html>
